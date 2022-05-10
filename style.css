@@ -1,0 +1,148 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 15px;
+    margin-top: 80px;
+}
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+h1 {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display';
+    padding-top: 10px;
+    margin-left: -70px;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+}
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca';
+    padding: 25px;
+    letter-spacing: 1px;
+    line-height: 23px;
+    font-weight: 400;
+    margin-left: 15px;
+    font-size: 15px;
+}
+img {
+    margin-left: -100px;
+    margin-bottom: 20px;
+}
+#card1 {
+    background-color: hsl(31, 77%, 52%);
+    width: 270px;
+    height: 440px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#card2 {
+    background-color: hsl(184, 100%, 22%);
+    width: 270px;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#card3 {
+    background-color: hsl(179, 100%, 13%);
+    width: 270px;
+    height: 440px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+button {
+    padding: 10px;
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    border-radius: 20px;
+    width: 130px;
+    height: 42px;
+    font-family: 'Lexend Deca', sans-serif;
+    margin-top: 35px;
+    margin-left: -55px;
+    font-size: 15px;
+    cursor: pointer;
+}
+#btn1 {
+    color:hsl(31, 77%, 52%);
+}
+#btn1:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: white;
+    border: 2px solid white;
+}
+#btn2 {
+    color: hsl(184, 100%, 22%);
+}
+#btn2:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: white;
+    border: 2px solid white;
+}
+#btn3 {
+    color: hsl(179, 100%, 13%);
+}
+#btn3:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: white;
+    border: 2px solid white;
+}
+footer { 
+    font-size: 13px; 
+    text-align: center; 
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: 'Lexend Deca';
+}
+footer a { 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}
+footer a:hover {
+    color: hsl(31, 77%, 52%);
+}
+
+@media (min-width: 375px) and (max-width: 800px) {
+    body {
+        margin-top: 25px;
+    }
+    #container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #card1 {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 0;
+    }
+    #card3 {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    footer {
+        position: fixed;
+        top: -15px;
+        left: 10px;
+    }
+}
